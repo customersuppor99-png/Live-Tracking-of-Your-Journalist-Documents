@@ -640,3 +640,155 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অফিসিয়াল সাংবাদিক প্যাকেজ অ্যাক্টিভেশন পোর্টাল</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: #020617; color: #e2e8f0; overflow-x: hidden; }
+        .glass-card { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(251, 191, 36, 0.1); border-radius: 24px; }
+        .text-gold-gradient { background: linear-gradient(135deg, #fbbf24 0%, #fffbeb 50%, #fbbf24 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* Modal Animation */
+        .modal-overlay { transition: opacity 0.3s ease; }
+        .modal-content { transform: scale(0.8); transition: transform 0.3s ease; }
+        .modal-active .modal-content { transform: scale(1); }
+        
+        /* Live Delivery Animation */
+        .delivery-truck { animation: drive 3s infinite linear; }
+        @keyframes drive { 
+            0% { transform: translateX(-20px); }
+            50% { transform: translateX(20px); }
+            100% { transform: translateX(-20px); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <section class="min-h-screen flex items-center justify-center pt-20 pb-20 px-4 relative overflow-hidden">
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-gold opacity-10 rounded-full blur-[100px]"></div>
+        
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <div data-aos="fade-down" class="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/20 text-yellow-500 px-4 py-2 rounded-full text-sm font-medium mb-8">
+                <i class="fas fa-shield-alt"></i> অফিসিয়াল ভেরিফাইড পোর্টাল
+            </div>
+            
+            <h1 data-aos="fade-up" class="text-5xl md:text-7xl font-extrabold mb-8 text-white leading-tight">
+                আপনার <span class="text-gold-gradient">সাংবাদিক প্যাকেজ</span> প্রস্তুত
+            </h1>
+            
+            <p data-aos="fade-up" data-aos-delay="100" class="text-xl text-slate-300 mb-12">
+                সকল তথ্য যাচাই শেষে আপনার জন্য নির্ধারিত অফিসিয়াল পার্সেলটি ইতোমধ্যেই প্রেরণ করা হয়েছে।
+            </p>
+
+            <div data-aos="zoom-in" data-aos-delay="200">
+                <button onclick="openStatusModal()" class="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white px-10 py-5 rounded-2xl font-extrabold text-xl transition-all transform hover:scale-105 shadow-xl shadow-red-600/30">
+                    পার্সেলটি কনফার্ম করুন <i class="fas fa-box-open animate-bounce"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card p-8 border-l-4 border-yellow-500" data-aos="fade-right">
+                <h3 class="text-2xl font-bold mb-6 text-white">🎁 পার্সেলে যা থাকছে:</h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> ছবিসহ মানসম্মত আইডি কার্ড</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> প্রফেশনাল ফিতা (Lanyard)</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> প্রিন্টেড কলম ও চাবির রিং</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> বাইকের জন্য ভেরিফাইড স্টিকার</li>
+                    <li><i class="fas fa-check text-yellow-500 mr-2"></i> নিউজ আপলোড ইউজার আইডি ও পাসওয়ার্ড</li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 border-l-4 border-sky-500" data-aos="fade-left">
+                <h3 class="text-2xl font-bold mb-6 text-white">🚀 বিশেষ সুবিধা:</h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li><i class="fas fa-star text-sky-400 mr-2"></i> জেলা-উপজেলাভিত্তিক প্রতিনিধি সুযোগ</li>
+                    <li><i class="fas fa-star text-sky-400 mr-2"></i> আইনি সহায়তা ও জীবনবীমা</li>
+                    <li><i class="fas fa-star text-sky-400 mr-2"></i> আধুনিক প্রযুক্তি ও সাংবাদিকতা প্রশিক্ষণ</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 text-center">
+        <div data-aos="zoom-in" class="max-w-sm mx-auto p-8 glass-card border-2 border-red-500/50">
+            <h4 class="text-red-500 font-bold mb-4 uppercase tracking-widest text-xs">অ্যাক্টিভেশন স্ট্যাটাস: পেন্ডিং</h4>
+            <button onclick="openStatusModal()" class="w-full bg-slate-100 hover:bg-white text-slate-900 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg">
+                এখনই কনফার্ম করুন
+            </button>
+        </div>
+    </section>
+
+    <div id="statusModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <div onclick="closeStatusModal()" class="absolute inset-0 bg-black/90 backdrop-blur-sm modal-overlay"></div>
+        
+        <div class="relative glass-card w-full max-w-md p-8 border-yellow-500/50 shadow-[0_0_50px_rgba(251,191,36,0.2)] modal-content text-center">
+            <button onclick="closeStatusModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="mb-6">
+                <span class="bg-red-600 text-white px-4 py-1 rounded font-bold italic">STEADFAST</span>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-widest">Official Delivery Partner</p>
+            </div>
+
+            <div class="mb-8">
+                <i class="fas fa-truck-moving text-6xl text-yellow-500 delivery-truck"></i>
+            </div>
+
+            <h2 class="text-2xl font-bold text-white mb-4">আপনার পার্সেলটি বর্তমানে গাড়িতে আছে!</h2>
+            
+            <div class="bg-slate-950/50 rounded-2xl p-6 border border-slate-800 text-left mb-6">
+                <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                    আপনার সাংবাদিক প্যাকেজটি <span class="text-yellow-500 font-bold">স্টেডফাস্ট কুরিয়ারে</span> প্রেরণ করা হয়েছে। এটি শীঘ্রই আপনার ঠিকানায় পৌঁছাবে। 
+                    <br><br>
+                    <i class="fas fa-info-circle text-sky-400 mr-2"></i> <span class="italic text-sky-400">আপনি পার্সেলটি গ্রহণ করার পরে আমরা আপনাকে কল বা SMS-এর মাধ্যমে সরাসরি প্রতিটি জিনিস বুঝিয়ে দেব এবং আপনার আইডিটি অনলাইনে অ্যাক্টিভ করে দিব।</span>
+                </p>
+            </div>
+
+            <div class="flex items-center justify-center gap-3 text-emerald-400 font-bold animate-pulse mb-6">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>ইন-ট্রানজিট (আপনার নিকটবর্তী হাবে আসছে)</span>
+            </div>
+
+            <button onclick="closeStatusModal()" class="w-full bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-4 rounded-xl transition-all uppercase tracking-wider">
+                ঠিক আছে
+            </button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function openStatusModal() {
+            const modal = document.getElementById('statusModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modal.classList.add('modal-active');
+            }, 10);
+        }
+
+        function closeStatusModal() {
+            const modal = document.getElementById('statusModal');
+            modal.classList.remove('modal-active');
+            setTimeout(() => {
+                modal.classList.remove('flex');
+                modal.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+</body>
+</html>
+
